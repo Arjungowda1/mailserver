@@ -55,6 +55,6 @@ app.post('/email', (req, res) => {
 });
 
 
-app.listen(port, () => {
-  console.log(`Email service listening at http://localhost:${port}`);
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Email service listening at http://0.0.0.0:${port}`);
 });
