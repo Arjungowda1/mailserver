@@ -27,6 +27,10 @@ transporter.verify((error, success) => {
 });
 
 
+app.get('/', (req, res) => {
+  res.status(200).send({ success: true, message: 'Working', info });
+});
+
 app.post('/email', (req, res) => {
   const { name, from, subject, message  } = req.body;
 
